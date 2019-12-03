@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
+<head>
+	<meta charset="utf-8">
+	<title></title>
+<link rel="stylesheet" type="text/css" href="./styles.css">
+<script type="text/javascript" src="./jquery.js"></script>
+<script type="text/javascript" src="./action.js"></script>
+<link rel="stylesheet" type="text/css" href="./materialize.min.css">
+<link rel="stylesheet" type="text/css" href="./sweetalert2.min.css">
+<script type="text/javascript" src="./sweetalert2.min.js"></script>
+</head>
+<body>
+	<section hidden="">
+<form class="" action="" method="post">
+<label for="usuario">usuario:
+<input class="espacio" type="text" name="pass" value="" placeholder="usuario" id="usuario">
+</label>
+<label for="pass">contraseña:
+	<input class="espacio" type="password" name="pass" value="" placeholder="contraseña" id="pass">
+</label>
+
+<input id="Btn" type="button" name="" value="ingresa" >
+
+</form>
+
+<script type="text/javascript">
+	this.logueando = false;
+	$("#Btn").click(function(){
+		// body...
+
+		var user = $("#usuario").val();
+		var pass = $("#pass").val();
+
+		if (user == "antony" && pass == "asuka") {
+			loginantony();
+			
+		}
+		else if (user == "victor" && pass == "jibril") {
+			
+			loginvictor();
+		}
+		else if (user == "michi" && pass == "maria") {
+			
+			loginmichi();
+
+		}else{
+			Swal.fire('Error');
+		}
+
+	});
+</script>
+</section>
+
+    
+
+    
+</body>
+</html>
